@@ -1,0 +1,58 @@
+.rounded-box-black {
+    border: black 3px solid;
+    border-radius: 20px;
+    padding: 3% 5% 3% 5%;
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+.course-title {
+    font-size: 1.3rem;
+}
+
+.course-name {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.course-description {
+    font-size: 1.2rem;
+}
+
+#table-padding {
+    margin: 0;
+}
+
+.rounded-box-grey {
+    background-color: #F3F3F3;
+    border-radius: 20px !important;
+    margin: 1% 10vw 0 10vw;
+    padding: 2% 5% 2% 5%;
+}
+
+.course-list {
+    width: 100%;
+    justify-content: center;
+}
+
+.course-btn {
+    font-size: 0.9rem;
+    background-color: #FF8419;
+    color: white;
+    margin: 2% 1%;
+}
+
+.hr-color {
+    border: 0.5px black solid;
+}
+
+.class-size {
+    width: 100%;
+    margin: 0 0 3% 0 !important;
+}
+
+.class-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1% 0;
+}

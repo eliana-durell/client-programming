@@ -1,0 +1,595 @@
+﻿.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+    background: white !important;
+}
+
+header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
+
+body {
+    /*offset nav*/
+    padding-top: 43px;
+}
+
+.nav-link.active {
+    background-color: #FF8419 !important;
+    color: white !important;
+}
+
+/* Getting rid of defaults*/
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+/* Overall site CSS*/
+.main-body {
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    margin-bottom: 5vh;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 1.1rem;
+}
+
+h1 {
+    color: #FF8419;
+    text-align: center;
+    margin: 3% 0;
+}
+
+.rounded-box-orange {
+    border: #FF8419 3px solid;
+    border-radius: 20px;
+    padding: 2% 5%; 
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.rounded-box-grey {
+    border: #F3F3F3 3px solid;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    margin: 0;
+    padding: 2% 0;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/* About CSS */
+.quote-box {
+    margin: 0 10%;
+    padding: 4%;
+}
+
+.horizontal-img {
+    width: 100%;
+    height: 30vh;
+    margin: 2% 0;
+}
+
+.vertical-img-box {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+.vertical-img {
+    margin: 0 7%;
+    width: 40%;
+}
+
+
+
+/* People CSS */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.ui.segment {
+    /* overwriting their styles */
+    border: none;
+    box-shadow: none;
+    background-color: #F3F3F3;
+    padding: 0;
+    margin: 0;
+}
+
+.people-space {
+    margin: 2% 0;
+}
+
+/* Buttons */
+a.item {
+    /* overwriting their styles */
+    background-color: white !important;
+    border: 1px solid black !important;
+    border-radius: 8px !important;
+}
+
+a.item:hover {
+    /* overwriting their styles */
+    background-color: #FF8419 !important;
+    border: 1px solid black !important;
+    border-radius: 8px !important;
+}
+
+a.item.active {
+    /* overwriting their styles */
+    background-color: #FF8419 !important;
+}
+
+/* Cards */
+.cards {
+    /* overwriting their styles */
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-detail {
+    box-shadow: 0px 0px 2px black;
+    width: 12vw !important;
+    max-width: 12vw !important;
+    margin: 1% !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black !important;
+}
+
+.img-clip {
+    display: block;
+    margin: 0 auto;
+    width: 12vw;
+    height: 200px;
+    object-fit: cover; /* crops to fill the space */
+    object-position: center; /* center of image */
+    padding: 5%;
+}
+
+.people-name {
+    text-align: center;
+    padding: 3% 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 2vh auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+/*    padding: 3% 5%;*/
+}
+
+.button:hover {
+    background-color: lightgrey;
+    color:black;
+}
+
+/* Modal */
+.ui.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ui.modal.visible.active {
+    display: block !important;
+}
+
+.modal {
+    width: 30vw !important;
+    height: auto;
+    text-align: center !important;
+}
+
+.modal-img {
+    width: 15vw;
+    margin: auto;
+    padding: 2% 0;
+}
+
+.ui.modal > .actions {
+    /* overwriting their styles */
+    background-color: white !important;
+    padding: 3% 3% 0 0 !important;
+}
+
+.info-title {
+    font-size: 2.1rem;
+}
+
+.long-hr {
+    margin: 1% 5% !important;
+}
+
+.info-name {
+    font-size: 1.5rem;
+}
+
+.info-username {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.short-hr {
+    margin: auto;
+    width: 70%;
+}
+
+.icon-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.icon {
+    width: 10%;
+    margin: 3% 5%;
+}
+
+
+
+/* Degrees CSS */
+#box-space {
+    padding: 3% 5%;
+}
+
+#thick-hr {
+    height: 4px !important;
+    margin: 1% 0;
+}
+
+.accordion.no-icons .accordion-title::before {
+    display: none !important;
+}
+
+.accordion {
+    margin: 0 auto;
+    background-color: #F3F3F3 !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-title {
+    background-color: #F3F3F3 !important;
+    border-bottom: 2px solid #cacaca !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    color: black;
+    font-size: 1.1rem !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.accordion-content {
+    background-color: #F3F3F3 !important;
+    border-bottom: 2px solid #cacaca !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    padding: 1% 5%;
+}
+
+.desc-space {
+    padding-bottom: 2%;
+}
+
+
+
+/* Minors CSS */
+.rounded-box-black {
+    border: black 3px solid;
+    border-radius: 20px;
+    padding: 2% 5%;
+    background-color: white;
+}
+
+.course-list {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    background-color: none !important;
+}
+
+.ui-widget {
+    /* overwriting their styles */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 1.1rem !important;
+}
+
+.course-link {
+    background-color: #FF8419 !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.link-space {
+    margin: 1% 0.5% !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    background: none !important;
+    border: none !important;
+    font-weight: normal !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+.ui-widget-header {
+    border: none !important;
+    background: none !important;
+}
+
+.course-title {
+    font-size: 1.3rem !important;
+    padding-bottom: 1%;
+}
+
+.course-description {
+    font-size: 1.1rem;
+}
+
+.ui-tabs .ui-tabs-panel {
+    border: #F3F3F3 3px solid;
+    background: #F3F3F3;
+    border-radius: 20px;
+    margin-top: 1%;
+    padding: 2% 4%;
+}
+
+:last-child > .accordion-content:last-child {
+    border: none !important;
+}
+
+#no-btm-border {
+    border: none !important
+}
+
+.class-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1% 0;
+}
+
+#no-btm-border-label {
+    /* Foundation adds -label */
+    background-color: #F3F3F3 !important;
+    border: none !important;
+    color: black;
+    padding: 1% 2% !important;
+}
+
+:last-child:not(.is-active) > .accordion-title {
+    border: none !important;
+}
+
+#no-margin {
+    margin: 0 !important;
+    width: 100%;
+}
+
+
+
+/* Employment CSS */
+.careerNames {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5% 10%;
+}
+
+.hr-career {
+    width: 50%;
+    margin: 2% auto;
+}
+
+.career-padding {
+    padding-bottom: 5%;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+/* Statistics CSS */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.stat-box {
+    background-color: #F3F3F3;
+    width: 70%;
+    height: auto;
+    margin: 5% auto;
+    padding-bottom: 4%;
+}
+
+.stat-number {
+    color: #FF8419;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.stat-description {
+    font-size: 1.2rem;
+    padding: 0 10%;
+    text-align: center;
+}
+
+/* Coop table */
+table.dataTable.display > tbody > tr:nth-child(odd) > .sorting_1 {
+    box-shadow: none !important;
+}
+
+table.dataTable.display > tbody > tr:nth-child(even) > .sorting_1 {
+    box-shadow: none !important;
+}
+
+table.dataTable.display > tbody > tr:nth-child(odd) > * {
+    box-shadow: none !important;
+}
+
+table.dataTable.display > tbody > tr:nth-child(even) > * {
+    box-shadow: none !important;
+}
+
+thread {
+    background-color: #f0f0f0 !important;
+}
+
+tr:hover {
+    background-color: #f0f0f0 !important;
+}
+
+table > * {
+    border: none !important;
+}
+
+
+
+/* Home CSS */
+.string-highlight {
+    color: #FF8419;
+}
+
+#typewriter {
+    font-size: 3em;
+    margin: 0;
+    font-family: "Courier New";
+    color: rgb(204, 204, 204);
+    &:after{
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Mine*/
+.type-size {
+    font-size: 3rem !important;
+}
+
+.tv {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color: rgb(31, 31, 31);
+    border: 30px solid black;
+    width: 100vw;
+    height: 89.5vh;
+}
+
+.mb-3 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar-nav {
+    margin: 0 2% !important;
+}
+
+nav > div.container-fluid {
+    padding: 0 !important;
+}
+
+ul.navbar-nav {
+    margin: 0 !important;
+}
+
+.pb-3 {
+    padding-bottom: 0 !important;
+}
+
+.numbers {
+    color: rgb(204, 204, 204);
+    font-size: 2.7rem;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.navbar-nav > li {
+    font-size: 1.25rem;
+}
+
+.black {
+    color: black;
+}
+
+footer {
+    font-size: 1rem;
+    padding-left: 2%;
+}

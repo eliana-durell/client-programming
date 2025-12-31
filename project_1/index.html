@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Dessert Platter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        var data = { }
+
+        function load_data() {
+            fetch('data/data.json')
+                .then(response => { 
+                    if(response.status == 200) {
+                        return response.json(); 
+                    }
+                    else {
+                        throw new Error('Error opening the json file.');
+                    }
+                })
+                .then(jsonData => {
+                    data = jsonData;
+                    //set title
+                    let description_ele = document.getElementById("description");
+                    description_ele.innerText = data["title"];
+                    //generate first question
+                    generate("init");
+                })
+                .catch(err => { 
+                    console.error(err);
+                });
+        }
+
+        async function build(selected_box) {
+            //Get rid of children underneath - if have
+            let main_ele = document.getElementById("main");
+            let div_parent = selected_box.parentNode;
+            if(main_ele.hasChildNodes())
+            {
+                await removeElementsUnder(div_parent);
+            }
+
+            //get selected option
+            let select_value = selected_box.value; 
+
+            // changed dessert in same select?
+            let old_value = selected_box.getAttribute("data-prev");
+            // has old value and change if the person hits the diff option
+            //if hit same option nothing happens
+            if (old_value && old_value !== select_value) {
+                let old_dessert = old_value.replace(" ", "_");
+                let oldImg = document.querySelector(`[data-dessert="${old_dessert}"]`);
+                if (oldImg) {
+                    oldImg.remove();
+                }
+            }
+            // keeping track of old select dessert option, in case it changes
+            selected_box.setAttribute("data-prev", select_value);
+
+            // add/remove answers to list for generating end result
+            let question_boxes = document.querySelectorAll(".question-box");
+            //get idx of parent
+            let index = Array.from(question_boxes).indexOf(div_parent);
+            let new_answers = data["answers"].slice(0, index);
+            new_answers.push(select_value);
+            //update
+            data["answers"] = new_answers;
+
+            // Check if we have more questions to ask 
+            if(data[select_value]) { 
+                generate(select_value);
+            }
+            else { //no more data
+                if(select_value== "Yes") {
+                    generate("init"); //ask questions again
+                }
+                else if (select_value == "No") {
+                    print_results(data["result_msg"], null, 140);
+                    // createForm();
+                }
+                else { //picked dessert
+                    // create image
+                    create_dessert(select_value);
+                    //add more treats?
+                    generate("extend");
+                }
+            }
+            // TODO ideas to disappear box - have bite marks made from circles generated
+        }
+
+        function removeElementsUnder(div_parent) {   
+            // changed to returning async-await-promise 
+            // so it removes all elements with animation then adds in new elements   
+            return new Promise((done) => {
+                let main_ele = document.getElementById("main");
+                function removeNext() {
+                    let lastchild = main_ele.lastChild;
+                    if (lastchild == div_parent) {
+                        done(); // done removing
+                        return;
+                    }
+                    //remove dessert image if exists
+                    let select = lastchild.querySelector("select");
+                    if (select) {
+                        let child_value = select.value.replace(" ", "_");
+                        let dessertImg = document.querySelector(`[data-dessert="${child_value}"]`);
+                        if (dessertImg) {
+                            dessertImg.remove();
+                        }
+                    }
+
+                    slideUpAnimation(lastchild, 140, () => {
+                        main_ele.removeChild(lastchild);
+                        removeNext(); // continue to recurse
+                    });
+                }
+                removeNext();
+            });
+        }
+        
+         // note: div_ele has to have position: absolute; for it to work
+        function slideUpAnimation(div_ele, target, callback=false) {
+            function slideUp(target) {
+                let pos = parseInt(div_ele.style.top);
+                if (0 < target) {
+                    let new_target = target - 5; //increment for faster animation
+                    pos = pos - 5; //increment for faster animation
+                    div_ele.style.top = pos + 'px';
+                    div_ele.scrollIntoView({ behavior: 'smooth', block: 'end' }); 
+                    requestAnimationFrame( () => {slideUp(new_target)});
+                } else {
+                    if (callback) {
+                        callback(); // call the next animation
+                    }
+                }
+            }
+            requestAnimationFrame( () => {slideUp(target)});
+        }
+        
+        function create_dessert(dessert) {
+            // replace spaces with _
+            let dessertStr = dessert.replaceAll(" ", "_");
+            let dessert_img = document.createElement("img");
+            dessert_img.src = "images/" + dessertStr + ".png";
+            dessert_img.classList.add("dessert");
+            dessert_img.setAttribute('data-dessert', dessertStr);
+
+            let plate_ele = document.getElementById("plate");
+            plate_ele.appendChild(dessert_img);
+        }
+
+        function generate(key) {
+            let main_ele = document.getElementById("main");
+
+            let div_ele = document.createElement('div');
+            div_ele.classList.add("question-box");
+
+            let data_list = [...data[key]];
+            let question = data_list[0];
+            let options = [...data_list.splice(1)];
+
+            //create question
+            let p_ele = document.createElement('p');
+            p_ele.innerText = `${question}`;
+            div_ele.appendChild(p_ele);
+
+            //create select
+            let select_ele = document.createElement("select");
+            select_ele.onchange = (e) => build(event.target);
+            
+            //create default select option
+            let option_ele = document.createElement("option");
+            option_ele.disabled = true;
+            option_ele.selected = true;
+            option_ele.hidden = true;
+            option_ele.innerText = "Select an option";
+            select_ele.appendChild(option_ele);
+
+            //create options
+            for(let i = 0, len = options.length; i<len; i++) {
+                option_ele = document.createElement("option");
+                option_ele.value = options[i];
+                option_ele.innerText = options[i];
+                select_ele.appendChild(option_ele);
+            }
+            div_ele.appendChild(select_ele);
+            //add to body
+            main_ele.appendChild(div_ele);
+
+            slideDownAnimation(div_ele, 140);
+        }
+
+        // note: div_ele has to have position: absolute; for it to work
+        function slideDownAnimation(div_ele, target, callback=false) {
+            // check if have sibling
+            let prevSibling = div_ele.previousSibling;
+            if (prevSibling) {
+                //generate it under sibling
+                div_ele.style.top = prevSibling.style.top;
+                let newZIndex =  parseInt(prevSibling.style.zIndex) - 1;
+                div_ele.style.zIndex = newZIndex + '';
+            }
+            else { //first question
+                div_ele.style.top = -140 + 'px';
+                div_ele.style.zIndex = '1000'; //so question can continue to generate under prev sibling
+            }
+
+            let count = 0;
+            function slideDown(count) {
+                let pos = parseInt(div_ele.style.top);
+                if (count < target) {
+                    let new_count = count + 5; //increment for faster animation
+                    pos = pos + 5; //increment for faster animation
+                    div_ele.style.top = pos + 'px';
+                    div_ele.scrollIntoView({ behavior: 'smooth', block: 'end' }); 
+                    requestAnimationFrame( () => {slideDown(new_count)});
+                } else {
+                    if (callback) {
+                        callback(); // call the next animation
+                    }
+                }
+            }
+            requestAnimationFrame( () => {slideDown(count)});
+        }
+
+        function print_results(msg, prev_answers=null, target=140) {
+            let main_ele = document.getElementById("main");
+
+            let title_ele = document.createElement("div");
+            title_ele.id = "title";
+            let p_ele = document.createElement("p");
+            p_ele.innerText = msg;
+            title_ele.appendChild(p_ele);
+            main_ele.appendChild(title_ele);
+
+            let background_ele = document.createElement("div");
+            background_ele.id = "results";
+
+            let bounds_ele = document.createElement("div");
+            bounds_ele.id = "results-bounds";
+
+            let div_ele = document.createElement("div");
+            div_ele.id = "results-text";
+            
+            //get all countries 
+            let continent_lst = [...data["init"]];
+            let asia_countries = [...data[continent_lst[1]]].splice(1);
+            let european_countries =  [...data[continent_lst[2]]].splice(1);
+            let american_areas = [...data[continent_lst[3]]].splice(1);
+            
+            // get data to create lists
+            let countries = [...asia_countries, ...european_countries, ...american_areas];
+            let country_dessert_dict = {};
+            let answers_lst;
+            if (!prev_answers) { //generating previous answers or current answers?
+                answers_lst = [...data["answers"]]; //current answers
+            }
+            else {
+                answers_lst = prev_answers; 
+            }
+            // get { Country1: [dessert1, dessert2], Country2: [dessert1] }
+            for(let i = 0, len = answers_lst.length; i<len; i++) {
+                let item = answers_lst[i];
+                if (countries.includes(item)) { //country?
+                    if (!(item in country_dessert_dict)) { //dessert list hasn't been created for country
+                        if(asia_countries.includes(item)) //asian countries have additional layer 
+                        {
+                            country_dessert_dict[item] = [answers_lst[i+2]];
+                        }
+                        else { // Spain = [Flan]
+                            country_dessert_dict[item] = [answers_lst[i+1]];
+                        }
+                    }
+                    else {  //dessert list has been created for country
+                        if(asia_countries.includes(item)) //asian countries have multiple layers 
+                        {
+                            let tmp_lst = [...country_dessert_dict[item]];
+                            tmp_lst.push(answers_lst[i+2]);
+                            country_dessert_dict[item] = tmp_lst; //update
+                        }
+                        else {
+                            let tmp_lst = [...country_dessert_dict[item]];
+                            tmp_lst.push(answers_lst[i+1]);
+                            country_dessert_dict[item] = tmp_lst;
+                        }
+                    }
+                }
+            }  
+            
+            // create ul and li's
+            for(key in country_dessert_dict) {
+                let country_p_ele = document.createElement("p");
+                country_p_ele.innerText = `${key}`;
+                div_ele.appendChild(country_p_ele);
+
+                let dessert_lst = country_dessert_dict[key];
+                let ul_ele = document.createElement("ul");
+                for(const dessert of dessert_lst) {
+                    let li_ele = document.createElement("li");
+                    li_ele.innerText = `${dessert}`;
+                    ul_ele.appendChild(li_ele);
+                }
+                div_ele.appendChild(ul_ele);
+            }
+            bounds_ele.appendChild(div_ele);
+            background_ele.appendChild(bounds_ele);
+            background_ele.style.opacity = '0'; //hide until animation
+            main_ele.appendChild(background_ele);
+
+            slideDownAnimation(title_ele, target, () => {
+                background_ele.style.opacity = '1'; // animation now
+                slideDownAnimation(background_ele, 140, () => {
+                    if(!prev_answers) {
+                        createForm();
+                    }
+                });
+            });
+        }
+
+        function createForm() {
+            let div_ele = document.createElement("div");
+            div_ele.id = "end-form";
+
+            let p_ele = document.createElement("p");
+            p_ele.innerText = "Send me my results!";
+            div_ele.appendChild(p_ele);
+
+            let form_ele = document.createElement("form");
+            form_ele.action = "#";
+            form_ele.method = "";
+            
+            let label_name = document.createElement("label");
+            label_name.for = "fullname"; //for -> name
+            label_name.innerText = "Name: ";
+            form_ele.appendChild(label_name);
+            let input_name = document.createElement("input");
+            input_name.type = "text";
+            input_name.id = "fullname";
+            input_name.name = "fullname";
+            input_name.required = true; //have validateForm() besides this
+            input_name.placeholder = "Name";
+            form_ele.appendChild(input_name);
+            
+            let br_ele = document.createElement("br");
+            form_ele.appendChild(br_ele);
+
+            let label_email = document.createElement("label");
+            label_email.for = "email"; //for -> name
+            label_email.innerText = "Email: ";
+            form_ele.appendChild(label_email);
+            let input_email = document.createElement("input");
+            input_email.type = "email";
+            input_email.id = "email";
+            input_email.name = "email";
+            input_email.required = true;
+            input_email.placeholder = "name@gmail.com";
+            form_ele.appendChild(input_email);
+
+            let br_ele_2 = document.createElement("br");
+            form_ele.appendChild(br_ele_2);
+
+            let submit_btn = document.createElement("input");
+            submit_btn.type = "submit";
+            submit_btn.innerText = "Submit";
+            form_ele.appendChild(submit_btn);
+
+            form_ele.addEventListener("submit", async function (e) {
+                e.preventDefault(); 
+
+                let valid = await validateForm(form_ele);
+                if (valid) {
+                    console.log("Passed validation");
+                    // generate last results, if exists
+                    await generatePrevResults();
+                    
+                    //change title
+                    let description_ele = document.getElementById("description");
+                    description_ele.innerText = `${form_ele.fullname.value}'s ${data["result_title"]}!`;
+                    description_ele.style.left = 50 + '%';
+
+                    // save results
+                    await saveResults();
+                } else {
+                    console.log("Failed validation");
+                }
+            });
+
+            div_ele.appendChild(form_ele);
+            let main_ele = document.getElementById("main");
+            main_ele.appendChild(div_ele);
+
+            slideDownAnimation(div_ele, 380);
+        }
+
+        async function validateForm(form) {
+            let name_input = form.fullname.value;
+            let email_input = form.email.value;
+            let valid_name = false;
+            let valid_email = false;
+            if(!name_input){ //empty
+                form.fullname.style.border = "2px solid red";
+                valid_name = false;
+            } else {
+                form.fullname.style.border = ''; //reset
+                valid_name = true;
+            }
+            if( /^[^@]+@[^@]+\.[^@]+$/.test(email_input) ) { //simple email format
+                form.email.style.border = ''; //reset
+                valid_email = true;
+            } else { 
+                form.email.style.border = "2px solid red";
+                valid_email = false;
+            }
+
+            if (valid_name && valid_email) {
+                return true;
+            }
+            return false;
+        }
+
+        async function generatePrevResults() {
+            let prevAnswers = null;
+            if(navigator.cookieEnabled) { //use cookies
+                let tmp = null;
+                let name = 'previousResults=';
+                let cookieStr = document.cookie;
+                let cookies = cookieStr.split(';');
+                for (let i = 0; i < cookies.length; i++) { //get answers from cookie string
+                    let cookie = cookies[i].trim();
+                    if (cookie.startsWith(name)) {
+                        tmp = cookie.substring(name.length);
+                        break;
+                    }
+                }
+                if(tmp) {
+                    prevAnswers = JSON.parse(decodeURIComponent(tmp));
+                }
+            }
+            else if (window.localStorage){ //use local storage
+                let tmp = localStorage.getItem('previousResults'); 
+                if(tmp) {
+                    prevAnswers = JSON.parse(tmp);
+                }
+            }
+            else { //neither supported?
+                window.location.href = "browser.html";
+            }
+            
+            if (prevAnswers) {
+                //check if previous answer and current answer are the same
+                let data_len = data["answers"].length;
+                let prev_len = prevAnswers.length;
+                let isEqual = true;
+                if (data_len == prev_len) {
+                    for(let i=0; i<data_len; i++) {
+                        if (data["answers"][i] != prevAnswers[i]) {
+                            isEqual = false;
+                            break;
+                        }
+                    }
+                }
+                else {
+                    isEqual = false;
+                }
+
+                if (!isEqual) {
+                    //not equal to prev answers
+                    print_results(data["prevAnswer_msg"], prevAnswers, 250);
+                }
+                else {
+                    //prev answer and current answer are the same
+                }
+            }
+            else {
+               //didnt get previous answers
+            }
+        }
+
+        async function saveResults() {
+            if(navigator.cookieEnabled) {
+                let cookieValue = encodeURIComponent(JSON.stringify(data["answers"]));
+                document.cookie = `previousResults=${cookieValue}; path=/; expires=Thu, 1 Dec 2026 12:00:00 UTC`;
+            }
+            else { //use local storage
+                localStorage.setItem('previousResults', JSON.stringify(data["answers"]) ); //update
+            }
+        }
+    </script>
+</head>
+<body onload="load_data()">
+    <h1 id="description"></h1>
+    <div id="layout">
+        <div id="main"></div>
+        <div id="plate"></div>
+    </div>
+</body>
+</html>
+
+<!-- Resources -->
+<!-- https://pixel-me.tokyo/en/ -->
+ <!-- https://www.remove.bg -->
+
+ <!-- 
+ NOTE: 
+ Able to do to different data sets
+ Test with test_data.json
+ Must comment out create_dessert(select_value);
+    because I dont want to find images for a whole new dataset... 
+   -->

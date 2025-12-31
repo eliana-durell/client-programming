@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - iSchool Website</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!--Added jQuery UI -->
+    <link rel="stylesheet" href="~/css/jquery-ui.min.css" />
+    <!-- for CDN -->
+    @*<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">*@
+    @*<link rel="stylesheet" href="/resources/demos/style.css">*@
+
+    <!--Semantic UI-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+
+    <!-- Foundation Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.5/css/dataTables.dataTables.css" />
+
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DurellP3.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Home</a>*@
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewData["nav"]?.ToString() == "Home" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewData["nav"]?.ToString() == "About Us" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="About">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewData["nav"]?.ToString() == "People" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="People">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewData["nav"]?.ToString() == "Degrees" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Degree">Degrees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewData["nav"]?.ToString() == "Minors" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Minor">Minors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(ViewData["nav"]?.ToString() == "Employment" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Employment">Employment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top black">
+        <div>
+            &copy; 2025 - Ellie's iSchool Site!
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!--need to load jquery before adding plugins-->
+    <!--added jquery UI plugin-->
+    <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+    <!-- for CDN -->
+    @*<script src="https://code.jquery.com/jquery-3.7.1.js"></script>*@
+    @*<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>*@
+
+    <!--Semantic UI-->
+    @*<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>*@
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+    <!-- Foundation Framework -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
+    <!-- Data Tables -->
+    <script src="https://cdn.datatables.net/2.3.5/js/dataTables.js"></script>
+
+
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

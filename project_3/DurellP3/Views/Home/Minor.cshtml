@@ -1,0 +1,51 @@
+﻿@model DurellP3.Models.MinorModel
+
+@{
+    ViewData["Title"] = Model.pageTitle;
+}
+
+<div class="main-body">
+    <div class="left-margin"></div>
+
+    <div>
+        <h1>Minors</h1>
+        <div class="rounded-box-black">
+            @foreach (var minor in Model.UgMinors)
+            {
+                <p class="course-title">@minor.title</p>
+                <ul class="accordion rounded-box-grey" id="no-margin" data-accordion data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title course-description" id="no-btm-border">Description</a>
+                        <div class="accordion-content" id="no-btm-border" data-tab-content>
+                            <p class="desc-space">@minor.description</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Courses -->
+                <div class="minor_tabs" >
+                    <ul class="course-list">
+                        @foreach (var course in minor.courses)
+                        {
+                            <li class="link-space">
+                                <a href="#@minor.name-@course"
+                                   class="course-link"
+                                   data-course-id="@course"
+                                   data-course-url="@Url.Action("getCourseInfo", "Home")"
+                                   data-target="@minor.name-@course">@course</a>
+                            </li>
+                        }
+                    </ul>
+                    @foreach (var course in minor.courses)
+                    {
+                        <div id="@minor.name-@course" class="rounded-box-grey">
+                            <p class="loading-text">Loading course details...</p>
+                        </div>
+                    }
+                </div>
+                <hr />
+            }
+        </div>
+    </div>
+
+    <div class="right-margin"></div>
+</div>

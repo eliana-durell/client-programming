@@ -1,0 +1,20 @@
+.careerNames {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5% 10%;
+}
+
+.hr-career {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.career-padding {
+    padding-bottom: 5%;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+}

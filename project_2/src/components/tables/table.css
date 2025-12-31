@@ -1,0 +1,7 @@
+.table-box .ant-table {
+  font-size: 1rem; 
+}
+
+.table-box .ant-table-thead > tr > th {
+  font-size: 1.1rem;
+}

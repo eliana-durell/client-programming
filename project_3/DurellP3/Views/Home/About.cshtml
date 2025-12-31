@@ -1,0 +1,25 @@
+﻿@model DurellP3.Models.AboutModel;
+
+@{
+    ViewData["Title"] = Model.pageTitle;
+}
+
+<div class="main-body">
+    <div class="left-margin"></div>
+
+    <div>
+        <h1>@Model.title</h1>
+        <p>@Model.description</p>
+        <img class="horizontal-img" src="~/css/images/horiz.jpg"></img>
+        <div class="rounded-box-orange quote-box">
+            <p>@Model.quote</p>
+            <p class="text-center">-@Model.quoteAuthor</p>
+        </div>
+        <div class="vertical-img-box">
+            <img class="vertical-img" src="~/css/images/vert-1.jpeg"></img>
+            <img class="vertical-img" src="~/css/images/vert-2.jpg"></img>
+        </div>
+    </div>
+
+    <div class="right-margin"></div>
+</div>

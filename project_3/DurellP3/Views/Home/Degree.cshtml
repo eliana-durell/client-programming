@@ -1,0 +1,84 @@
+﻿@model DurellP3.Models.DegreeModel;
+
+
+@{
+    ViewData["Title"] = Model.pageTitle;
+}
+
+<div class="main-body">
+    <div class="left-margin"></div>
+
+    <div>
+        <h1>Degrees</h1>
+        <div class="rounded-box-grey" id="box-space">
+            <h2>Undergraduate</h2>
+            <hr id="thick-hr"/>
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                @foreach (var ug in Model.undergraduate)
+                {
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">@ug.title</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p class="desc-space">@ug.description</p>
+                            <div class="rounded-box-orange">
+                                <p>Concentrations</p>
+                                <ul class="degrees">
+                                    @foreach (var con in ug.concentrations)
+                                    {
+                                        <li>@con</li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+
+            <h2>Graduate</h2>
+            <hr id="thick-hr"/>
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                @foreach (var gr in Model.graduate)
+                {
+                    if (gr.degreeName != "graduate advanced certificates")
+                    {
+                        <li class="accordion-item" data-accordion-item>
+                            <a href="#" class="accordion-title">@gr.title</a>
+                            <div class="accordion-content" data-tab-content>
+                                <p class="desc-space">@gr.description</p>
+                                <div class="rounded-box-orange">
+                                    <p>Concentrations</p>
+                                    <ul class="degrees">
+                                        @foreach (var con in gr.concentrations)
+                                        {
+                                            <li>@con</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>
+
+            <h2>Graduate Advanced Certificates</h2>
+            <hr id="thick-hr"/>
+            <ul class="accordion no-icons" data-accordion disabled data-allow-all-closed="true">
+                @foreach (var gr in Model.graduate)
+                {
+                    if (gr.degreeName == "graduate advanced certificates")
+                    {
+                        @foreach (var ac in gr.availableCertificates)
+                        {
+                            <li class="accordion-item" data-accordion-item>
+                                <p class="accordion-title">@ac</p>
+                            </li>
+                        }
+
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-margin"></div>
+</div>

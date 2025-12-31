@@ -1,0 +1,25 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.stat-box {
+    background-color: #F3F3F3;
+    width: 70%;
+    height: 35vh;
+    margin: 5% auto;
+}
+
+.stat-number {
+    color: #FF8419;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.stat-description {
+    font-size: 1.2rem;
+    padding: 0 10%;
+}

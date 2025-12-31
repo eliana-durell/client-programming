@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QSFtU0ZerACsmSMez9eFP+ujR/H6bGTWCZGDroxU+fNQuJC6ut2ouU0gYuZbmnNpKON8QRet2ZJ17e0W4mKxAQ==",
+  "success": true,
+  "projectFilePath": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/DurellP3.csproj",
+  "expectedPackageFiles": [
+    "/Users/elianadurell/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

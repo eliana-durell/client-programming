@@ -1,0 +1,41 @@
+.rounded-grey {
+    border: #F3F3F3 3px solid;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    margin: 2vh 0vw;
+    padding: 2% 5% 3% 5%;
+}
+
+.hr-width {
+    width: 100%;
+}
+
+h2 {
+    margin-top: 3%;
+    font-size: 1.5rem;
+}
+
+.title-space {
+    margin: 0.5% 0;
+    font-size: 1.1rem;
+}
+
+.rounded-box-orange {
+    border: #FF8419 3px solid;
+    border-radius: 10px;
+    padding: 2% 5%;
+    background-color: white;
+    margin: 1% 0;
+}
+
+#table-padding {
+    padding: 0 2%;
+}
+
+.degrees {
+    list-style-image: url('../../assets/paw.png');
+}
+
+.text-center {
+    text-align: center;
+}

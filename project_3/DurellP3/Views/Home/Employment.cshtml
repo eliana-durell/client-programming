@@ -1,0 +1,106 @@
+﻿@model DurellP3.Models.EmploymentModel;
+
+@{
+    ViewData["Title"] = Model.pageTitle;
+}
+
+<div class="main-body">
+    <div class="left-margin"></div>
+
+    <div id="employment">
+        <h1 class="text-center">Careers</h1>
+        <img class="horizontal-img" src="~/css/images/horiz-2.jpg"></img>
+        <p class="text-center">@Model.introduction.title</p>
+        <h2>@Model.introduction.content[0].title</h2>
+        <p>@Model.introduction.content[0].description</p>
+
+        <div class="rounded-box-orange careerNames">
+            <div class="career-padding">
+                <h2 class="text-center">@Model.employers.title</h2>
+                <hr class="hr-career" />
+                <div class="text-center">
+                    @foreach (var employer in Model.employers.employerNames)
+                    {
+                        <p>@employer</p>
+                    }
+                </div>
+            </div>
+
+            <div class="career-padding">
+                <h2 class="text-center">@Model.careers.title</h2>
+                <hr class="hr-career" />
+                <div class="text-center">
+                    @foreach (var career in Model.careers.careerNames)
+                    {
+                        <p>@career</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <h2>@Model.introduction.content[1].title</h2>
+        <p>@Model.introduction.content[1].description</p>
+
+        <!-- Statistics -->
+        <h1>@Model.degreeStatistics.title</h1>
+        <div class="stats-grid">
+            @foreach (var stat in Model.degreeStatistics.statistics)
+            {
+                <div class="stat-box">
+                    <p class="stat-number">@stat.value</p>
+                    <p class="stat-description">@stat.description</p>
+                </div>
+            }
+        </div>
+
+        <h1>@Model.coopTable.title</h1>
+        <table id="myTable1" class="display">
+            <thead>
+                <tr>
+                    <th>Employer</th>
+                    <th>Degree</th>
+                    <th>City</th>
+                    <th>Term</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var coop in Model.coopTable.coopInformation)
+                {
+                    <tr>
+                        <td>@coop.employer</td>
+                        <td>@coop.degree</td>
+                        <td>@coop.city</td>
+                        <td>@coop.term</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h1>@Model.employmentTable.title</h1>
+        <table id="myTable2" class="display">
+            <thead>
+                <tr>
+                    <th>Employer</th>
+                    <th>Degree</th>
+                    <th>City</th>
+                    <th>Title</th>
+                    <th>Start Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var job in Model.employmentTable.professionalEmploymentInformation)
+                {
+                    <tr>
+                        <td>@job.employer</td>
+                        <td>@job.degree</td>
+                        <td>@job.city</td>
+                        <td>@job.title</td>
+                        <td>@job.startDate</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="right-margin"></div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurellP3", "DurellP3\DurellP3.csproj", "{61C5517C-3323-49E4-BE79-CF23A915FB11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C5517C-3323-49E4-BE79-CF23A915FB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C5517C-3323-49E4-BE79-CF23A915FB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C5517C-3323-49E4-BE79-CF23A915FB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C5517C-3323-49E4-BE79-CF23A915FB11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4326194-EC98-450F-9D33-4E2506E4CCBC}
+	EndGlobalSection
+EndGlobal

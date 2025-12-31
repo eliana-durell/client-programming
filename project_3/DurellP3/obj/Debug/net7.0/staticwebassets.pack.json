@@ -1,0 +1,373 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/obj/Debug/net7.0/scopedcss/projectbundle/DurellP3.bundle.scp.css",
+      "PackagePath": "staticwebassets/DurellP3.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/email.png",
+      "PackagePath": "staticwebassets/css/images/email.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/facebook.png",
+      "PackagePath": "staticwebassets/css/images/facebook.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/homeImg.png",
+      "PackagePath": "staticwebassets/css/images/homeImg.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/horiz-2.jpg",
+      "PackagePath": "staticwebassets/css/images/horiz-2.jpg"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/horiz.jpg",
+      "PackagePath": "staticwebassets/css/images/horiz.jpg"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/img_holder.png",
+      "PackagePath": "staticwebassets/css/images/img_holder.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/paw.png",
+      "PackagePath": "staticwebassets/css/images/paw.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/phone.png",
+      "PackagePath": "staticwebassets/css/images/phone.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/twitter.png",
+      "PackagePath": "staticwebassets/css/images/twitter.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_diagonals-small_40_db4865_40x40.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_diagonals-small_40_db4865_40x40.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_diagonals-small_50_93c3cd_40x40.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_diagonals-small_50_93c3cd_40x40.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_diagonals-small_50_ff3853_40x40.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_diagonals-small_50_ff3853_40x40.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_diagonals-small_75_ccd232_40x40.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_diagonals-small_75_ccd232_40x40.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_dots-medium_80_ffff38_4x4.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_dots-medium_80_ffff38_4x4.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_dots-small_35_35414f_2x2.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_dots-small_35_35414f_2x2.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-bg_white-lines_85_f7f7ba_40x100.png",
+      "PackagePath": "staticwebassets/css/images/ui-bg_white-lines_85_f7f7ba_40x100.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-icons_454545_256x240.png",
+      "PackagePath": "staticwebassets/css/images/ui-icons_454545_256x240.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-icons_88a206_256x240.png",
+      "PackagePath": "staticwebassets/css/images/ui-icons_88a206_256x240.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-icons_c02669_256x240.png",
+      "PackagePath": "staticwebassets/css/images/ui-icons_c02669_256x240.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-icons_e1e463_256x240.png",
+      "PackagePath": "staticwebassets/css/images/ui-icons_e1e463_256x240.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-icons_ffeb33_256x240.png",
+      "PackagePath": "staticwebassets/css/images/ui-icons_ffeb33_256x240.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets/css/images/ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/vert-1.jpeg",
+      "PackagePath": "staticwebassets/css/images/vert-1.jpeg"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/images/vert-2.jpg",
+      "PackagePath": "staticwebassets/css/images/vert-2.jpg"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/jquery-ui.min.css",
+      "PackagePath": "staticwebassets/css/jquery-ui.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-ui/jquery-ui.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-ui/jquery-ui.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.DurellP3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.DurellP3.props",
+      "PackagePath": "build\\DurellP3.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.DurellP3.props",
+      "PackagePath": "buildMultiTargeting\\DurellP3.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.DurellP3.props",
+      "PackagePath": "buildTransitive\\DurellP3.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

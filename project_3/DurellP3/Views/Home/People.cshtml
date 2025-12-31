@@ -1,0 +1,189 @@
+﻿@model DurellP3.Models.PeopleModel;
+
+@{
+    ViewData["Title"] = Model.pageTitle;
+}
+
+<div class="main-body">
+    <div class="left-margin"></div>
+
+    <div>
+        <h1>@Model.title</h1>
+        <p class="text-center">@Model.subTitle</p>
+        <div id="context2" class="rounded-box-grey people-space">
+            <div class="ui secondary menu center">
+                <a id="overwrite-btn" class="item active" data-tab="faculty">Faculty</a>
+                <a id="overwrite-btn" class="item" data-tab="staff">Staff</a>
+            </div>
+            <div class="ui active tab segment" data-tab="faculty">
+                <div class="cards">
+                    @foreach (var faculty in Model.faculty)
+                    {
+                        <div class="ui card card-detail">
+                            <div>
+                                <img src="@faculty.imagePath" class="img-clip">
+                            </div>
+                            <div class="description">
+                                <p class="people-name">@faculty.name</p>
+                                <button class="button" onclick="showModal('@faculty.username')">></button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <!--Staff-->
+            <div class="ui tab segment" data-tab="staff">
+                <div class="cards">
+                    @foreach (var staff in Model.staff)
+                    {
+                        <div class="ui card card-detail">
+                            <div>
+                                <img src="@staff.imagePath" class="img-clip">
+                            </div>
+                            <div class="description">
+                                <p class="people-name">@staff.name</p>
+                                <button class="button" onclick="showModal('@staff.username')">></button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+
+            <!-- have modals outside -->
+            @foreach (var faculty in Model.faculty)
+            {
+                <div class="ui modal" id="modal-@faculty.username">
+                    <div class="actions">
+                        <div class="ui negative basic deny button">
+                            X
+                        </div>
+                    </div>
+                    <p class="info-title">@faculty.title</p>
+                    <hr class="long-hr" />
+                    <p class="info-name">@faculty.name</p>
+                    <p class="info-username">@faculty.username</p>
+                    <img src="@faculty.imagePath" class="modal-img">
+                    @if (faculty.tagline != "")
+                    {
+                        <p>@faculty.tagline</p>
+                        <hr class="short-hr" />
+                    }
+                    @if (faculty.office != "")
+                    {
+                        <p>Located @@ @faculty.office</p>
+                    }
+                    else
+                    {
+                        <p>No office</p>
+                    }
+                    @if (faculty.interestArea != "")
+                    {
+                        <p>Interest area(s): @faculty.interestArea</p>
+                    }
+                    @if (faculty.website != "")
+                    {
+                        <p>
+                            <a href="@faculty.website" target="_blank">@faculty.website</a>
+                        </p>
+                    }
+                    <div class="icon-box">
+
+                        @if (faculty.phone != "")
+                        {
+                            <a class="icon" href="@faculty.phone">
+                                <img src="~/css/images/phone.png" alt="phone icon" />
+                            </a>
+                        }
+                        @if (faculty.email != "")
+                        {
+                            <a class="icon" href="@faculty.email">
+                                <img src="~/css/images/email.png" alt="email icon" />
+                            </a>
+                        }
+                        @if (faculty.facebook != "")
+                        {
+                            <a class="icon" href="@faculty.facebook">
+                                <img src="~/css/images/facebook.png" alt="phone icon" />
+                            </a>
+                        }
+                        @if (faculty.twitter != "")
+                        {
+                            <a class="icon" href="@faculty.twitter">
+                                <img src="~/css/images/twitter.png" alt="phone icon" />
+                            </a>
+                        }
+                    </div>
+                </div>
+            }
+
+            @foreach (var staff in Model.staff)
+            {
+                <div class="ui modal" id="modal-@staff.username">
+                    <div class="actions">
+                        <div class="ui negative basic deny button">
+                            X
+                        </div>
+                    </div>
+                    <p class="info-title">@staff.title</p>
+                    <hr class="long-hr" />
+                    <p class="info-name">@staff.name</p>
+                    <p class="info-username">@staff.username</p>
+                    <img src="@staff.imagePath" class="modal-img">
+                    @if (staff.tagline != "")
+                    {
+                        <p>@staff.tagline</p>
+                        <hr class="short-hr" />
+                    }
+                    @if (staff.office != "")
+                    {
+                        <p>Located @@ @staff.office</p>
+                    }
+                    else
+                    {
+                        <p>No office</p>
+                    }
+                    @if (staff.interestArea != "")
+                    {
+                        <p>Interest area(s): @staff.interestArea</p>
+                    }
+                    @if (staff.website != "")
+                    {
+                        <p>
+                            <a href="@staff.website" target="_blank">@staff.website</a>
+                        </p>
+                    }
+                    <div class="icon-box">
+
+                        @if (staff.phone != "")
+                        {
+                            <a class="icon" href="@staff.phone">
+                                <img src="~/css/images/phone.png" alt="phone icon" />
+                            </a>
+                        }
+                        @if (staff.email != "")
+                        {
+                            <a class="icon" href="@staff.email">
+                                <img src="~/css/images/email.png" alt="email icon" />
+                            </a>
+                        }
+                        @if (staff.facebook != "")
+                        {
+                            <a class="icon" href="@staff.facebook">
+                                <img src="~/css/images/facebook.png" alt="phone icon" />
+                            </a>
+                        }
+                        @if (staff.twitter != "")
+                        {
+                            <a class="icon" href="@staff.twitter">
+                                <img src="~/css/images/twitter.png" alt="phone icon" />
+                            </a>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="right-margin"></div>
+</div>
