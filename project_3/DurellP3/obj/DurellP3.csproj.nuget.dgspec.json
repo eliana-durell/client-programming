@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/DurellP3.csproj": {}
+    "/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/DurellP3.csproj": {}
   },
   "projects": {
-    "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/DurellP3.csproj": {
+    "/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/DurellP3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/DurellP3.csproj",
+        "projectUniqueName": "/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/DurellP3.csproj",
         "projectName": "DurellP3",
-        "projectPath": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/DurellP3.csproj",
+        "projectPath": "/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/DurellP3.csproj",
         "packagesPath": "/Users/elianadurell/.nuget/packages/",
-        "outputPath": "/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/obj/",
+        "outputPath": "/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/elianadurell/.nuget/NuGet/NuGet.Config"
@@ -21,7 +21,6 @@
         ],
         "sources": {
           "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.317/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +33,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
         }
       }
     }

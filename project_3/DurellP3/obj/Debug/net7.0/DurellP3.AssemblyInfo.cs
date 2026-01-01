@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DurellP3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+add75daee399706a3eb938b515f318b071795da1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DurellP3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DurellP3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

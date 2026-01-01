@@ -69,7 +69,7 @@
                         <p>@faculty.tagline</p>
                         <hr class="short-hr" />
                     }
-                    @if (faculty.office != "")
+                    @if (!string.IsNullOrWhiteSpace(faculty.office))
                     {
                         <p>Located @@ @faculty.office</p>
                     }
@@ -135,7 +135,7 @@
                         <p>@staff.tagline</p>
                         <hr class="short-hr" />
                     }
-                    @if (staff.office != "")
+                    @if (!string.IsNullOrWhiteSpace(staff.office))
                     {
                         <p>Located @@ @staff.office</p>
                     }

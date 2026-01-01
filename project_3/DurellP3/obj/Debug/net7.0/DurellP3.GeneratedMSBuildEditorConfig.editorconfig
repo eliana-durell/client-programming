@@ -9,61 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DurellP3
 build_property.RootNamespace = DurellP3
-build_property.ProjectDir = /Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/
+build_property.ProjectDir = /Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3
+build_property.MSBuildProjectDirectory = /Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/About.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/Course.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/Course.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/Degree.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/Degree.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZWdyZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/DynTest.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/DynTest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EeW5UZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/Employment.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/Employment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FbXBsb3ltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/Index.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/Minor.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/Minor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NaW5vci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Home/People.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Home/People.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QZW9wbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Shared/Error.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/_ViewImports.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/_ViewStart.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/elianadurell/Desktop/HomeworkNotes/2025-2026/fall/client programming/DurellP3/DurellP3/Views/Shared/_Layout.cshtml]
+[/Users/elianadurell/Desktop/HomeworkNotes/github/client-programming/project_3/DurellP3/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l1e85b5tyx
