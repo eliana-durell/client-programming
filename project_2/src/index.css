@@ -66,3 +66,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* added */
+* > p, div {
+  font-size: 1.1rem;
+}

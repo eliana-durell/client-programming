@@ -47,7 +47,7 @@ const PeopleModal = ({info}) => {
           )
           :
           (<></>)}
-          {info.office ? 
+          {info.office != null && info.office ? 
           (<p className='text-center'>Located @ {info.office}</p>)
           :
           (<p className='text-center'>No office</p>)

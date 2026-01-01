@@ -19,3 +19,7 @@
     margin: 0 7%;
     width: 40%;
 }
+
+.ant-anchor-link-title {
+    font-size: 1.3rem !important;
+}
