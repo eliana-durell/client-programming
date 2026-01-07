@@ -64,12 +64,12 @@
                     <p class="info-name">@faculty.name</p>
                     <p class="info-username">@faculty.username</p>
                     <img src="@faculty.imagePath" class="modal-img">
-                    @if (faculty.tagline != "")
+                    @if (!string.IsNullOrEmpty(faculty.tagline))
                     {
                         <p>@faculty.tagline</p>
                         <hr class="short-hr" />
                     }
-                    @if (!string.IsNullOrWhiteSpace(faculty.office))
+                    @if (!string.IsNullOrEmpty(faculty.office))
                     {
                         <p>Located @@ @faculty.office</p>
                     }
@@ -77,7 +77,7 @@
                     {
                         <p>No office</p>
                     }
-                    @if (faculty.interestArea != "")
+                    @if (!string.IsNullOrEmpty(faculty.interestArea))
                     {
                         <p>Interest area(s): @faculty.interestArea</p>
                     }
@@ -89,25 +89,25 @@
                     }
                     <div class="icon-box">
 
-                        @if (faculty.phone != "")
+                        @if (!string.IsNullOrEmpty(faculty.phone))
                         {
                             <a class="icon" href="@faculty.phone">
                                 <img src="~/css/images/phone.png" alt="phone icon" />
                             </a>
                         }
-                        @if (faculty.email != "")
+                        @if (!string.IsNullOrEmpty(faculty.email))
                         {
                             <a class="icon" href="@faculty.email">
                                 <img src="~/css/images/email.png" alt="email icon" />
                             </a>
                         }
-                        @if (faculty.facebook != "")
+                        @if (!string.IsNullOrEmpty(faculty.facebook))
                         {
                             <a class="icon" href="@faculty.facebook">
                                 <img src="~/css/images/facebook.png" alt="phone icon" />
                             </a>
                         }
-                        @if (faculty.twitter != "")
+                        @if (!string.IsNullOrEmpty(faculty.twitter))
                         {
                             <a class="icon" href="@faculty.twitter">
                                 <img src="~/css/images/twitter.png" alt="phone icon" />
@@ -130,12 +130,12 @@
                     <p class="info-name">@staff.name</p>
                     <p class="info-username">@staff.username</p>
                     <img src="@staff.imagePath" class="modal-img">
-                    @if (staff.tagline != "")
+                    @if (!string.IsNullOrEmpty(staff.tagline))
                     {
                         <p>@staff.tagline</p>
                         <hr class="short-hr" />
                     }
-                    @if (!string.IsNullOrWhiteSpace(staff.office))
+                    @if (!string.IsNullOrEmpty(staff.office))
                     {
                         <p>Located @@ @staff.office</p>
                     }
@@ -143,43 +143,43 @@
                     {
                         <p>No office</p>
                     }
-                    @if (staff.interestArea != "")
+                    @if (!string.IsNullOrEmpty(staff.interestArea))
                     {
                         <p>Interest area(s): @staff.interestArea</p>
                     }
-                    @if (staff.website != "")
+                    @if (!string.IsNullOrEmpty(staff.website))
                     {
                         <p>
                             <a href="@staff.website" target="_blank">@staff.website</a>
                         </p>
                     }
-                    <div class="icon-box">
+                <div class="icon-box">
 
-                        @if (staff.phone != "")
-                        {
-                            <a class="icon" href="@staff.phone">
-                                <img src="~/css/images/phone.png" alt="phone icon" />
-                            </a>
-                        }
-                        @if (staff.email != "")
-                        {
-                            <a class="icon" href="@staff.email">
-                                <img src="~/css/images/email.png" alt="email icon" />
-                            </a>
-                        }
-                        @if (staff.facebook != "")
-                        {
-                            <a class="icon" href="@staff.facebook">
-                                <img src="~/css/images/facebook.png" alt="phone icon" />
-                            </a>
-                        }
-                        @if (staff.twitter != "")
-                        {
-                            <a class="icon" href="@staff.twitter">
-                                <img src="~/css/images/twitter.png" alt="phone icon" />
-                            </a>
-                        }
-                    </div>
+                    @if (!string.IsNullOrEmpty(staff.phone))
+                    {
+                        <a class="icon" href="@staff.phone">
+                            <img src="~/css/images/phone.png" alt="phone icon" />
+                        </a>
+                    }
+                    @if (!string.IsNullOrEmpty(staff.email))
+                    {
+                        <a class="icon" href="@staff.email">
+                            <img src="~/css/images/email.png" alt="email icon" />
+                        </a>
+                    }
+                    @if (!string.IsNullOrEmpty(staff.facebook))
+                    {
+                        <a class="icon" href="@staff.facebook">
+                            <img src="~/css/images/facebook.png" alt="phone icon" />
+                        </a>
+                    }
+                    @if (!string.IsNullOrEmpty(staff.twitter))
+                    {
+                        <a class="icon" href="@staff.twitter">
+                            <img src="~/css/images/twitter.png" alt="phone icon" />
+                        </a>
+                    }
+                </div>
                 </div>
             }
         </div>

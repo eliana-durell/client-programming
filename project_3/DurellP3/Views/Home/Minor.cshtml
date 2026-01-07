@@ -17,7 +17,12 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title course-description" id="no-btm-border">Description</a>
                         <div class="accordion-content" id="no-btm-border" data-tab-content>
-                            <p class="desc-space">@minor.description</p>
+                            <p>@minor.description</p>
+                            @if (!string.IsNullOrEmpty(minor.note))
+                            {
+                                <hr />
+                                <p><strong>Note:</strong> @minor.note</p>
+                            }
                         </div>
                     </li>
                 </ul>
@@ -42,7 +47,10 @@
                         </div>
                     }
                 </div>
-                <hr />
+                @if (!(minor.title == "Web Development (WEBD-MN)"))
+                {
+                    <hr />
+                }
             }
         </div>
     </div>
