@@ -42,6 +42,10 @@
     margin: 2% 1%;
 }
 
+.hr-space {
+    margin: 2vh 0;
+}
+
 .hr-color {
     border: 0.5px black solid;
 }
