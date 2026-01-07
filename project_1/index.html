@@ -24,7 +24,6 @@
                     let description_ele = document.getElementById("description");
                     let description_txt = document.createTextNode(data["title"]);
                     description_ele.appendChild(description_txt);
-                    // description_ele.innerText = data["title"];
                     //generate first question
                     generate("init");
                 })
@@ -165,7 +164,6 @@
             let p_ele = document.createElement('p');
             let p_txt = document.createTextNode(`${question}`);
             p_ele.appendChild(p_txt);
-            // p_ele.innerText = `${question}`;
             div_ele.appendChild(p_ele);
 
             //create select
@@ -179,7 +177,6 @@
             option_ele.hidden = true;
             let option_txt = document.createTextNode("Select an option");
             option_ele.appendChild(option_txt);
-            // option_ele.innerText = "Select an option";
             select_ele.appendChild(option_ele);
 
             //create options
@@ -188,7 +185,6 @@
                 option_ele.value = options[i];
                 option_txt = document.createTextNode(options[i]);
                 option_ele.appendChild(option_txt);
-                // option_ele.innerText = options[i];
                 select_ele.appendChild(option_ele);
             }
             div_ele.appendChild(select_ele);
@@ -239,7 +235,6 @@
             let p_ele = document.createElement("p");
             let p_txt = document.createTextNode(msg);
             p_ele.appendChild(p_txt);
-            // p_ele.innerText = msg;
             title_ele.appendChild(p_ele);
             main_ele.appendChild(title_ele);
 
@@ -302,7 +297,6 @@
                 let country_p_ele = document.createElement("p");
                 let country_p_txt = document.createTextNode(`${key}`);
                 country_p_ele.appendChild(country_p_txt);
-                // country_p_ele.innerText = `${key}`;
                 div_ele.appendChild(country_p_ele);
 
                 let dessert_lst = country_dessert_dict[key];
@@ -311,7 +305,6 @@
                     let li_ele = document.createElement("li");
                     let li_txt = document.createTextNode(`${dessert}`);
                     li_ele.appendChild(li_txt);
-                    // li_ele.innerText = `${dessert}`;
                     ul_ele.appendChild(li_ele);
                 }
                 div_ele.appendChild(ul_ele);
@@ -338,7 +331,6 @@
             let p_ele = document.createElement("p");
             let p_txt = document.createTextNode("Send me my results!");
             p_ele.appendChild(p_txt);
-            // p_ele.innerText = "Send me my results!";
             div_ele.appendChild(p_ele);
 
             let form_ele = document.createElement("form");
@@ -349,7 +341,6 @@
             label_name.for = "fullname"; //for -> name
             let label_name_txt = document.createTextNode("Name: ");
             label_name.appendChild(label_name_txt);
-            // label_name.innerText = "Name: ";
             form_ele.appendChild(label_name);
             let input_name = document.createElement("input");
             input_name.type = "text";
@@ -366,7 +357,6 @@
             label_email.for = "email"; //for -> name
             let label_email_txt = document.createTextNode("Email: ");
             label_email.appendChild(label_email_txt);
-            // label_email.innerText = "Email: ";
             form_ele.appendChild(label_email);
             let input_email = document.createElement("input");
             input_email.type = "email";
@@ -383,7 +373,6 @@
             submit_btn.type = "submit";
             let submit_btn_txt = document.createTextNode("Submit");
             submit_btn.appendChild(submit_btn_txt);
-            // submit_btn.innerText = "Submit";
             form_ele.appendChild(submit_btn);
 
             form_ele.addEventListener("submit", async function (e) {
@@ -400,7 +389,6 @@
                     description_ele.textContent = ""; //reset
                     let description_txt = document.createTextNode(`${form_ele.fullname.value}'s ${data["result_title"]}!`);
                     description_ele.appendChild(description_txt);
-                    // description_ele.innerText = `${form_ele.fullname.value}'s ${data["result_title"]}!`;
                     description_ele.style.left = 50 + '%';
 
                     // save results
