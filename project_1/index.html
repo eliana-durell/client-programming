@@ -22,7 +22,9 @@
                     data = jsonData;
                     //set title
                     let description_ele = document.getElementById("description");
-                    description_ele.innerText = data["title"];
+                    let description_txt = document.createTextNode(data["title"]);
+                    description_ele.appendChild(description_txt);
+                    // description_ele.innerText = data["title"];
                     //generate first question
                     generate("init");
                 })
@@ -161,26 +163,32 @@
 
             //create question
             let p_ele = document.createElement('p');
-            p_ele.innerText = `${question}`;
+            let p_txt = document.createTextNode(`${question}`);
+            p_ele.appendChild(p_txt);
+            // p_ele.innerText = `${question}`;
             div_ele.appendChild(p_ele);
 
             //create select
             let select_ele = document.createElement("select");
-            select_ele.onchange = (e) => build(event.target);
+            select_ele.onchange = (e) => build(e.target);
             
             //create default select option
             let option_ele = document.createElement("option");
             option_ele.disabled = true;
             option_ele.selected = true;
             option_ele.hidden = true;
-            option_ele.innerText = "Select an option";
+            let option_txt = document.createTextNode("Select an option");
+            option_ele.appendChild(option_txt);
+            // option_ele.innerText = "Select an option";
             select_ele.appendChild(option_ele);
 
             //create options
             for(let i = 0, len = options.length; i<len; i++) {
                 option_ele = document.createElement("option");
                 option_ele.value = options[i];
-                option_ele.innerText = options[i];
+                option_txt = document.createTextNode(options[i]);
+                option_ele.appendChild(option_txt);
+                // option_ele.innerText = options[i];
                 select_ele.appendChild(option_ele);
             }
             div_ele.appendChild(select_ele);
@@ -229,7 +237,9 @@
             let title_ele = document.createElement("div");
             title_ele.id = "title";
             let p_ele = document.createElement("p");
-            p_ele.innerText = msg;
+            let p_txt = document.createTextNode(msg);
+            p_ele.appendChild(p_txt);
+            // p_ele.innerText = msg;
             title_ele.appendChild(p_ele);
             main_ele.appendChild(title_ele);
 
@@ -290,14 +300,18 @@
             // create ul and li's
             for(key in country_dessert_dict) {
                 let country_p_ele = document.createElement("p");
-                country_p_ele.innerText = `${key}`;
+                let country_p_txt = document.createTextNode(`${key}`);
+                country_p_ele.appendChild(country_p_txt);
+                // country_p_ele.innerText = `${key}`;
                 div_ele.appendChild(country_p_ele);
 
                 let dessert_lst = country_dessert_dict[key];
                 let ul_ele = document.createElement("ul");
                 for(const dessert of dessert_lst) {
                     let li_ele = document.createElement("li");
-                    li_ele.innerText = `${dessert}`;
+                    let li_txt = document.createTextNode(`${dessert}`);
+                    li_ele.appendChild(li_txt);
+                    // li_ele.innerText = `${dessert}`;
                     ul_ele.appendChild(li_ele);
                 }
                 div_ele.appendChild(ul_ele);
@@ -322,7 +336,9 @@
             div_ele.id = "end-form";
 
             let p_ele = document.createElement("p");
-            p_ele.innerText = "Send me my results!";
+            let p_txt = document.createTextNode("Send me my results!");
+            p_ele.appendChild(p_txt);
+            // p_ele.innerText = "Send me my results!";
             div_ele.appendChild(p_ele);
 
             let form_ele = document.createElement("form");
@@ -331,7 +347,9 @@
             
             let label_name = document.createElement("label");
             label_name.for = "fullname"; //for -> name
-            label_name.innerText = "Name: ";
+            let label_name_txt = document.createTextNode("Name: ");
+            label_name.appendChild(label_name_txt);
+            // label_name.innerText = "Name: ";
             form_ele.appendChild(label_name);
             let input_name = document.createElement("input");
             input_name.type = "text";
@@ -346,7 +364,9 @@
 
             let label_email = document.createElement("label");
             label_email.for = "email"; //for -> name
-            label_email.innerText = "Email: ";
+            let label_email_txt = document.createTextNode("Email: ");
+            label_email.appendChild(label_email_txt);
+            // label_email.innerText = "Email: ";
             form_ele.appendChild(label_email);
             let input_email = document.createElement("input");
             input_email.type = "email";
@@ -361,7 +381,9 @@
 
             let submit_btn = document.createElement("input");
             submit_btn.type = "submit";
-            submit_btn.innerText = "Submit";
+            let submit_btn_txt = document.createTextNode("Submit");
+            submit_btn.appendChild(submit_btn_txt);
+            // submit_btn.innerText = "Submit";
             form_ele.appendChild(submit_btn);
 
             form_ele.addEventListener("submit", async function (e) {
@@ -375,7 +397,10 @@
                     
                     //change title
                     let description_ele = document.getElementById("description");
-                    description_ele.innerText = `${form_ele.fullname.value}'s ${data["result_title"]}!`;
+                    description_ele.textContent = ""; //reset
+                    let description_txt = document.createTextNode(`${form_ele.fullname.value}'s ${data["result_title"]}!`);
+                    description_ele.appendChild(description_txt);
+                    // description_ele.innerText = `${form_ele.fullname.value}'s ${data["result_title"]}!`;
                     description_ele.style.left = 50 + '%';
 
                     // save results
